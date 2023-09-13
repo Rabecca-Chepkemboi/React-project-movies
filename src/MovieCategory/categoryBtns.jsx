@@ -6,23 +6,22 @@ const MovieCategory = ({ selectedCategory, handleCategoryChange }) => {
       <div className="category-buttons">
         <button
           className={selectedCategory === "all" ? "active" : "inactive"}
-          onClick={() => handleCategoryChange("all")}
-        >
+          onClick={() => handleCategoryChange("all")}>
           All
         </button>      
         
         <button
           className={selectedCategory === "28" ? "active" : "inactive"}
-          onClick={() => handleCategoryChange("28")}
-        >
+          onClick={() => handleCategoryChange("28")}>
           Action
         </button>
+
         <button
           className={selectedCategory === "35" ? "active" : "inactive"}
-          onClick={() => handleCategoryChange("35")}
-        >
+          onClick={() => handleCategoryChange("35")}>
           Comedy
-        </button>    </div>
+        </button>    
+        </div>
     );
   };
 export default MovieCategory;

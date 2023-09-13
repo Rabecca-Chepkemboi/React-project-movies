@@ -20,17 +20,20 @@ import React from "react";const CategoryFilter = ({ selectedCategory, handleCate
       { id: "53", name: "Thriller" },
       { id: "10752", name: "War" },
       { id: "37", name: "Western" },
-    ];  return (
+    ];
+
+    return (
       <div className="category-buttons">
         {categories.map((category) => (
           <button
-            key={category.id}
-            onClick={() => handleCategoryChange(category.id, category.name)}
-            className={selectedCategory === category.id ? "active" : ""}
-          >
+          key={category.id}
+          onClick={() => handleCategoryChange(category.id, category.name)}
+          className={selectedCategory === category.id ? "active" : ""}>
             {category.name}
           </button>
         ))}
       </div>
     );
-  };export default CategoryFilter;
+  };
+  
+  export default CategoryFilter;

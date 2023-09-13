@@ -1,11 +1,12 @@
-.container{
+.holder{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1%;
 }
-.image-container{
+.image-holder{
     overflow: hidden;
 }
+
 img{
     width: 100%;
     height: auto;

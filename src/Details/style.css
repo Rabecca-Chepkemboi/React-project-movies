@@ -1,13 +1,19 @@
-.movie-details {
+.movie-content {
     margin: 20px;
-  }   img {
+  }   
+
+  img {
     max-width: 300px;
     height: auto;
     margin-right: 20px;
-  }  .movie-details h2 {
+  }  
+
+  .movie-content h2 {
     font-size: 24px;
     margin-bottom: 10px;
-  }  .movie-details p {
+  }  
+
+  .movie-content p {
     font-size: 16px;
     margin-bottom: 10px;
   }

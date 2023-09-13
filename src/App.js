@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/GetMovies/NavBar';
 import GetMovies from './components/GetMovies';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import MovieDetails from './components/GetMovies/Details/MovieDetails';
+import MovieDetails from './Details/MovieDetails';
+import Navbar from './NavBar';
 
 function App (){
   return (

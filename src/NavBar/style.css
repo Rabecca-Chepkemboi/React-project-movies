@@ -1,67 +1,107 @@
 .Navbar {
-    /* color: #fff; */
-    padding: 10px;
-  }  .nav {
+    padding: 12px;
+  }  
+
+  .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }  .logo {
+  }  
+
+  .logo {
     font-size: 24px;
-  }  .logo span {
-    color: orange;
-  }  .links {
+  }  
+
+  .logo span {
+    color: #6fd2df;
+  }  
+
+  .links {
     display: flex;
     align-items: center;
-  }  .links li {
+  }  
+
+  .links li {
     list-style: none;
     margin-right: 15px;
-  }  .links button {
-    background-color: #E5B909
-;
+  }  
+
+  .links button {
+    background-color: #2d4141;
     color: #fff;
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
-  }  /* Search styles */
+  } 
+  
   .search {
     display: flex;
     align-items: center;
-  }  .search input {
-    padding: 8px;
+  }  
+
+  .search input {
+    padding: 8px 52px;
+    background-color: #2d4141;
+    color: white;
     border: none;
     border-radius: 4px 0 0 4px;
     outline: none;
-  }  .search button {
-    background-color: #E59809
-;
+  }  
+
+  .search button {
+    background-color: #6fd2df;
     color: #fff;
+    border-radius: 1em;
     border: none;
     padding: 8px 16px;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
-  }  /* Search results styles */
+  } 
+
   .search-results {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }  .search-result {
+  }  
+
+  .search-result {
     max-width: 300px;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #6fd2df;
     border-radius: 5px;
     text-align: left;
-  }  .search-result img {
+    transition: box-shadow 0.1s ease, transform 0.1s ease;
+
+  }  
+
+  .search-result:hover{
+    background-color: #c7e2e6;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1)
+    
+  }
+
+  .search-result img {
     width: 100%;
     height: 400px;
     object-fit: cover;
     border-radius: 5px;
-  }  .search-result h3 {
+  }  
+
+  .search-result h3 {
     font-size: 18px;
     margin-top: 10px;
-  }  .search-result p {
+    color: rgb(212, 59, 85);
+  }  
+  
+  .search-result p {
     font-size: 14px;
     margin-top: 10px;
+  }
+  .search-result p:hover{
+    font-size: 14px;
+    color: rgb(97, 89, 89);
   }

@@ -1,8 +1,10 @@
-.image-container{
-    width: 90%;
+.image-holder{
+    width: 190%;
     overflow: hidden;
 }
+
 img{
     width: 100%;
     height: auto;
-    object-fit: cover;}
+    object-fit: cover;
+}

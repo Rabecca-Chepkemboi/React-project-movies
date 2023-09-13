@@ -13,23 +13,30 @@ const Action = () => {
       const movies = await MostViewed();
       setMovies(movies.results);
     })();
-  }, []);  const handleCategoryChange = (categoryId, categoryName) => {
+
+  }, []);  
+  
+  const handleCategoryChange = (categoryId, categoryName) => {
     setSelectedCategory(categoryId);
     setSelectedCategoryName(categoryName);
-  };  const filteredMovies =
+  };  
+  
+  const filteredMovies =
     selectedCategory === "all"
       ? movies
-      : movies.filter((movie) => movie.genre_ids.includes(parseInt(selectedCategory)));  return (
+      : movies.filter((movie) => movie.genre_ids.includes(parseInt(selectedCategory)));  
+      return (
     <div>
       {selectedCategoryName !== "All" && <h1>{selectedCategoryName} Movies</h1>}     
        <CategoryFilter
         selectedCategory={selectedCategory}
-        handleCategoryChange={handleCategoryChange}
-      />      <div className="movies">
+        handleCategoryChange={handleCategoryChange}/>      
+      <div className="movies">
         {filteredMovies.map((item) => (
           <ImageContainer props={item} key={item.id} />
         ))}
       </div>
     </div>
-  );
-};export default Action;
+  );};
+
+export default Action;
